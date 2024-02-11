@@ -35,3 +35,15 @@ console.log(true && false); // logical AND
 console.log(false || true); // Logical OR
 console.log(!true); // Logical NOT
 console.log((3>4) && (4>6)); 
+
+// Concept of Short circuiting and Coercion ( type inversion in js)
+
+// falsy booleans ( null, undefined, 0, -0, Nan, false)
+//truthy booleans ( Objects, non-zero number, non-empty string, true)
+
+console.log(10 && 6); //  Logical And ( when first operand(bool) is false it will return it immediately but if it is true then it will return second operand ( bool))
+
+console.log( 0 && 6) ;
+
+console.log( "" || 10 ) // Logical OR ( Opposite of Logical AND)
+console.log( 10 || "");
