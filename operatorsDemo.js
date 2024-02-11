@@ -38,7 +38,7 @@ console.log((3>4) && (4>6));
 
 // Concept of Short circuiting and Coercion ( type inversion in js)
 
-// falsy booleans ( null, undefined, 0, -0, Nan, false)
+// falsy booleans ( null, undefined, 0, -0, NaN, false)
 //truthy booleans ( Objects, non-zero number, non-empty string, true)
 
 console.log(10 && 6); //  Logical And ( when first operand(bool) is false it will return it immediately but if it is true then it will return second operand ( bool))
@@ -47,3 +47,7 @@ console.log( 0 && 6) ;
 
 console.log( "" || 10 ) // Logical OR ( Opposite of Logical AND)
 console.log( 10 || "");
+
+// NaN ( not a number ( invalid number))
+console.log(10 / null); // output = Infinity
+console.log(undefined/null); // output = Nan
