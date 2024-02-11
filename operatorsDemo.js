@@ -51,3 +51,19 @@ console.log( 10 || "");
 // NaN ( not a number ( invalid number))
 console.log(10 / null); // output = Infinity
 console.log(undefined/null); // output = Nan
+
+
+// Bitwise operators ( performed on binary ( bits ))
+
+// & ( bitwise AND)
+console.log(6&9);
+
+// | (bitwise OR)
+console.log(4|5);
+
+// ^ ( bitwise XOR)
+console.log(2^2);
+
+// ~ ( bitwise NOT)
+console.log(~4); // value will be -( x + 1) here x = 4;
+
