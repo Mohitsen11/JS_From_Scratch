@@ -67,3 +67,17 @@ console.log(2^2);
 // ~ ( bitwise NOT)
 console.log(~4); // value will be -( x + 1) here x = 4;
 
+// Equality Operators
+
+// "==" Abstract equality operator
+// this operator checks the type of the operands 
+// if types are same then it calls "===" , if not same then it does coercion(type conversion) and then comparison occurs
+
+console.log( 1 == "1"); // in ecma-international-docs ( string gets converted into number) so the output will be 1 == 1 it refers to === so 1 === 1 yep values are same so it prints " true ";
+console.log(1 == "Mohit"); // output = false ( first Mohit gets converted into number but number is not possible so it will converted into NaN and 1 === NaN gets false bcuz they are not equal)
+
+// "===" Strict Equality operator 
+// it also checks types 
+// if types are diff return false or if it same then comparison occurs
+console.log(1 === "1"); // output = false (types are diff) 
+console.log("a" === "a");
