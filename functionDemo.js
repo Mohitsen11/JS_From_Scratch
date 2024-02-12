@@ -1,7 +1,7 @@
 // we will use functions in this tutorial 
 // DRY concept follows :- Don't repeat yourself
 
-function isEvenOrOdd(num){
+function isEvenOrOdd(num){ // here num is parameter ( something which is defined and processed)
     if(num % 2 == 0){
         return "Even";
     } else{
@@ -13,7 +13,7 @@ let num1 = 2;
 let num2 = 45;
 let num3 = 56;
 
-console.log(`Num1 is : ${isEvenOrOdd(num1)}`);
+console.log(`Num1 is : ${isEvenOrOdd(num1)}`); // here num1 is argument( something which actually is passed)
 console.log(`Num2 is : ${isEvenOrOdd(num2)}`);
 console.log(`Num3 is : ${isEvenOrOdd(num3)}`);
 
