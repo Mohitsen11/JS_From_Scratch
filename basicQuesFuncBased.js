@@ -333,3 +333,35 @@ function pattern7(n){
 }
 
 pattern7(7);
+
+//    1
+//   121
+//  12312
+// 1234123
+
+function pattern8(n){
+
+    for(let row=1; row<=n; row++){
+
+        let str = "";
+        let spaces=n-row;
+        let num = 1;
+
+        for(let k=1; k<=spaces; k++){
+            str += " ";
+        }
+
+        let value = 2*row-1;
+
+        for(let col=1; col<=value; col++){
+            if(col == row+1){
+                num = 1;
+            }
+            str += num;
+            num++;
+        }
+        console.log(str);
+    }
+}
+
+pattern8(4);
