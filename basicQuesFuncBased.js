@@ -198,3 +198,138 @@ function pattern5(n){
 }
 
 pattern5(7);
+
+// we can solve pattern5 in other way too
+
+function upperTriangle(n){
+         // outer loop for printing rows
+        for(let rows=0; rows<n; rows++){
+
+        let str = "";
+        let spaces = n-rows-1;
+        //loop for printing spaces
+        for(let k=0; k<spaces; k++){
+            str+=" ";
+        }
+
+        // loop for printing stars( stars are in odd series)
+        let stars = 2*rows+1;
+        for(let col=0; col<stars; col++){
+            str+= "*";
+        }
+
+        console.log(str);
+    }
+}
+
+function lowerTriangle(n){
+
+    for(let row=0; row<n-1; row++){
+
+        let str = "";
+        let spaces = row+1;
+
+        for(let k=0; k<spaces; k++){
+            str += " ";
+        }
+
+        let stars = 2*(n-row-1)-1;
+
+        for(let col=0; col<stars; col++){
+            str += "*";
+        }
+
+        console.log(str);
+
+    }
+}
+
+function pattern6(n){
+    upperTriangle(n);
+    lowerTriangle(n);
+}
+
+pattern6(5);
+
+// Butterfly pattern
+
+// *     *
+// **   **
+// *** ***
+// *******
+// *** ***
+// **   **
+// *     *
+
+function upperPart(n){
+
+    for(let row=1; row<=(n-1)/2; row++){
+
+        let str = "";
+        let leftStar = row;
+
+        for(let k=1; k<=leftStar; k++){
+            str += "*";
+        }
+
+        // spaces
+        let spaces = n-2*row;
+
+        for(let k=1; k<=spaces; k++){
+            str += " ";
+        }
+
+        // right stars
+        let rightStar = row;
+        for(let k=1; k<=rightStar; k++){
+            str += "*";
+        }
+
+        console.log(str);
+    }
+}
+
+function middlePart(n){
+
+    let str = "";
+    for(let i=1; i<=n; i++){
+        str += "*";
+    }
+
+    console.log(str);
+}
+
+function lowerPart(n){
+
+    for(let row=1; row<=(n-1)/2; row++){
+        let str = "";
+        let leftStar = (n-1)/2-row+1;
+
+        for(let k=1; k<=leftStar; k++){
+            str += "*";
+        }
+
+        // spaces
+        let spaces = 2*row-1;
+
+        for(let k=1; k<=spaces; k++){
+            str += " ";
+        }
+
+        let rightStar = (n-1)/2-row+1;
+
+        for(let k=1; k<=rightStar; k++){
+            str += "*";
+        }
+
+        console.log(str);
+    }
+}
+
+function pattern7(n){
+    upperPart(n);
+    middlePart(n);
+    lowerPart(n);
+}
+
+pattern7(7);
