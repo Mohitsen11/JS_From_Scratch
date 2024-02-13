@@ -81,3 +81,20 @@ console.log(1 == "Mohit"); // output = false ( first Mohit gets converted into n
 // if types are diff return false or if it same then comparison occurs
 console.log(1 === "1"); // output = false (types are diff) 
 console.log("a" === "a");
+
+// Ternary Operators ( (condition)? (exp1) :(exp2))
+
+let m = ((10 >  5) ? (10) : (7)); // output : 10
+
+let b = 10; 
+let c = ((false) ? (5) : (++b)); // output : increment the b then assign the value ( 11 );
+
+// unary + operator ( it converts string to a number )
+// original operand type doesn't change 
+let num1 = "10";
+let num2 = +x;
+let num3 = -x; // unary - operator ( first convert into number after negate it )
+console.log(typeof(num2));
+console.log((num3)); // output : -number;
+
+

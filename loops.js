@@ -46,4 +46,12 @@ for(let x = 1; x<=5; x++){
 
 console.log(ans);
 
+// do-while loop
 
+let y = 10;
+
+do{
+    y++;
+} while( y < 5 ); // this loops executes at least once whether the condition is false . And if condition is true then it works as simple loop.
+
+console.log(y); // output = 11
