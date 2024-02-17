@@ -47,4 +47,4 @@ console.log(typeof 1);
 console.log(typeof true);
 console.log(typeof null); // it will be object but it should be null ( historical mistake by js developers )
 console.log(typeof undefined);
-console.log(typeof 4.44);
+console.log(typeof 4.444);
