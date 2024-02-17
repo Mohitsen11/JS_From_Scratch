@@ -96,5 +96,3 @@ let num2 = +x;
 let num3 = -x; // unary - operator ( first convert into number after negate it )
 console.log(typeof(num2));
 console.log((num3)); // output : -number;
-
-
