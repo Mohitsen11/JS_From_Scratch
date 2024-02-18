@@ -55,7 +55,13 @@ let removed = c.splice(1, 2, 0, 0);
 
 console.log(removed, c);
 
+// we can club all the array elements in a string
 
+let x = [5,6,7,8, "Mohit"];
+
+const str = x.join(); // default :- separated by comma output :- 5,6,7,8,Mohit ( because parameter is empty)
+
+console.log(str);
 
 
 
