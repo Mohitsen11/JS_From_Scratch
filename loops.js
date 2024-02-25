@@ -63,3 +63,13 @@ let array1 = [1,2,3,4,5,10,20];
 for(let num of array1){
     console.log(num);
 }
+
+let obj2 = {
+    name: "Mohit",
+    age: 23,
+    company: "Google"
+}
+
+for(let item of Object.keys(obj2)){
+    console.log(item);
+}
