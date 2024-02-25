@@ -55,3 +55,11 @@ do{
 } while( y < 5 ); // this loops executes at least once whether the condition is false . And if condition is true then it works as simple loop.
 
 console.log(y); // output = 11
+
+// for of loop
+
+let array1 = [1,2,3,4,5,10,20];
+
+for(let num of array1){
+    console.log(num);
+}
